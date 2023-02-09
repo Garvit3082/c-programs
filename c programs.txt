@@ -1,0 +1,62 @@
+To calculate area of triangle-
+#include <stdio.h>
+void main()
+{
+    float l,b,area;
+    scanf("%f%f",&l,&b);
+    area=l*b;
+    printf("area of triangle%f",area);
+    
+}
+
+ To convert the given lenghth in cm into m and km.
+#include <stdio.h>
+void main()
+{
+    float l,l1,l2;
+    scanf("%f",&l);
+    l1=l/100;
+    l2=l/100000;
+    printf("legth in metre%f",l1);
+    printf("legth in kilometre%f",l2);
+   
+}
+
+To convert given days into weeks ,months and year.
+#include <stdio.h>
+void main()
+{
+    int d,m,w,y;
+    scanf("%d",&d);
+    w=d/7;
+    m=d/30.417;
+    y=d/365;
+    printf("no of weeks%d",w);
+    printf("no of months%d",m);
+    printf("no of year%d",y);
+    
+}
+
+To calculate the third angle of a triangle by two given angles.
+#include <stdio.h>
+void main()
+{
+    float a1,a2,a3,a4;
+    scanf("%f%f",&a1,&a2);
+    a3=a1+a2;
+    a4=360-a3;
+    printf("third angle of a triangle is%f",a4);
+    
+}
+
+To calculate area of a triangle. 
+#include <stdio.h>
+void main()
+{
+    float h,b,a;
+    scanf("%f%f",&h,&b);
+    a=0.5*h*b;
+    printf("area of a triangle is %f",a);
+    return 0;
+}
+
