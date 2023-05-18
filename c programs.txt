@@ -60,3 +60,950 @@ void main()
     return 0;
 }
 
+#include<stdio.h>
+int main()
+{
+    int a,b,sum;
+printf("enter two numbers\n");
+scanf("%d",&a);
+scanf("%d",&b);
+sum=a+b;
+printf("sum of two numbers is:\n%d",sum);
+return 0;
+}
+
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int x,y;
+printf("Enter first no.\n");
+scanf("%d",&x);
+y=sqrt(x);
+printf("square root of %d is:\n%d",x,y);
+return 0;
+}
+
+
+
+#include <stdio.h>
+int main()
+{
+    int base , height , area;
+    printf("Enter base of triangle:\n");
+    scanf("%d",&base);
+    printf("Enter height of triangle:\n");
+    scanf("%d",&height);
+    area=0.5*base*height;
+    printf("Area of triangle:\n%d",area);
+    return 0;
+}
+
+#include <stdio.h>
+int main() {
+    int h,m;
+    scanf("%d",&h,&m);
+    if
+       (22<h<23&&0<m<59||1<h<3&&0<m<59)
+        printf("Good Night");
+    else if 
+        (12<h<15&&0<m<59)
+        printf("Good Afternoon");
+    else if
+        (16<h<20&&0<m<59)
+        printf("Good Evening");
+    else
+        printf("Good Night");
+        
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+  char c;
+  scanf("%c",&c);
+  if (c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
+  printf("%c is a Vowel",c);
+  else
+  printf("%c is a consonant",c);
+
+    return 0;
+}
+
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float x,y,z,a,b,total,average,percentage;
+    printf("Enter number of first subject \n");
+    scanf("%f",&x);
+    printf("Enter  number of Second subject\n");
+    scanf("%f",&y);
+    printf("Enter  number of third subject\n");
+    scanf("%f",&z);
+    printf("Enter  number of fourth subject\n");
+    scanf("%f",&a);
+    printf("Enter  number of fifth subject\n");
+    scanf("%f",&b);
+    total=(x+y+z+a+b);
+    average=(x+y+z+a+b)/5;
+    percentage=(total/500)*100;
+    printf("Total is:\n%f",total);
+    printf("\nAverage is:\n%f",average);
+    printf("\nPercentage is:\n%f",percentage);
+    
+return 0;
+}
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int x,y,z;
+    printf("Enter first angle\n");
+    scanf("%d",&x);
+    printf("Enter Second angle\n");
+    scanf("%d",&y);
+    z=180-(x+y);
+    printf("Third angle of triangle is:%d",z);
+    
+return 0;
+}
+
+include <stdio.h>
+
+int main()
+{
+  int n,sum=0;
+  
+  scanf("%d",&n);
+  
+  printf("Table of %d is\n");
+  for(int i=1;i<=10;i++)
+  
+  {
+      
+      printf("%d*%d=%d\n",n,i,n*i);
+    
+  }
+  
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+  int n,sum=0;
+  
+  scanf("%d",&n);
+  
+  printf("Sum of  numbers is\n");
+  for(int i=2;i<=n;i+=2)
+  
+  {
+      
+       printf("%d+%d",sum,i);
+     sum=sum+i;
+     printf("=%d\n",sum);
+    
+  }
+  
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+  int n,sum=0;
+  
+  scanf("%d",&n);
+  
+  printf("Sum of  numbers is\n");
+  for(int i=1;i<=n;i+=2)
+  
+  {
+      
+       printf("%d+%d",sum,i);
+     sum=sum+i;
+     printf("=%d\n",sum);
+    
+  }
+  
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+  int n,sum=0;
+  
+  scanf("%d",&n);
+  
+  printf("Sum of  numbers is\n");
+  for(int i=1;i<=n;i++)
+  
+  {
+       printf("%d+%d",sum,i);
+     sum=sum+i;
+     printf("=%d\n",sum);
+    
+  }
+  
+
+    return 0;
+}
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float p,t,r,interest;
+    printf("Enter Principle amount \n");
+    scanf("%f",&p);
+    printf("Enter Time\n");
+    scanf("%f",&t);
+    printf("Enter Rate\n");
+    scanf("%f",&r);
+    interest=(p*t*r)/100;
+    printf("Simple interset is:\n%f",interest);
+return 0;
+}
+
+#include <string.h>
+
+int main()
+{
+ char a[100], c;
+  int i,len,count=0;
+printf("Enter string");
+gets(a);
+printf("\nEnter the character which u find the first occurence\n");
+c=getchar();
+for(i=0;a[i];i++){
+    if(a[i]==c)
+    {
+		 count++;
+ 
+		}
+}
+printf("total occurence of %c is %d",c,count);
+    return 0;
+}
+
+#include <stdio.h>
+#include<string.h>
+#include<ctype.h>
+int main()
+{
+    char a[100],b[100];
+    int i,j;
+    printf("Enter string\n");
+    scanf("%[^\n]c",a);
+    int len=strlen(a);
+    j=len-1;
+    for(i=0;i<len;i++){
+        b[i]=a[j];
+        j--;
+    }
+    b[i]='\0';
+    printf("%s\n",b);
+    
+    return 0;
+}
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+ char a[100], ch;
+  int index=-1,i,len;
+printf("Enter string");
+gets(a);
+printf("\nEnter the character which u find the first occurence\n");
+scanf("%c",&ch);
+len=strlen(a);
+for(i=0;i<=len-1;i++){
+    if(a[i]==ch){
+        index=i;
+        
+    }
+}
+if(index==-1){
+    printf("sorry no word present");
+}
+else
+printf("character %c present at %d position",ch,index+1);
+
+    return 0;
+}
+
+*******************************************************************************/
+#include <stdio.h>
+#include<string.h>
+#include<ctype.h>
+int main()
+{
+    char a[100];
+    printf("Enter string\n");
+    scanf("%[^\n]c",a);
+
+       int word = 0;  
+      
+    for(int i = 0; i < strlen(a)-1; i++) {  
+ 
+        if(a[i] == ' ' && isalpha(a[i+1]) && (i > 0)) {  
+            word++;  
+        }  
+    }    
+    word++;  
+      
+    printf("Total number of words in the given string: %d", word);
+    return 0;
+}
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+ char a[100], ch;
+  int flag=0,i,len;
+printf("Enter string");
+gets(a);
+printf("\nEnter the character which u find the first occurence\n");
+scanf("%c",&ch);
+len=strlen(a);
+for(i=0;i<=len-1;i++){
+    if(a[i]==ch){
+        flag++;
+        break;
+    }
+}
+if(flag==0){
+    printf("sorry no word present");
+}
+else
+printf("character %c present at %d position",ch,i+1);
+
+  #include <stdio.h>
+#include<string.h>
+void toggle( char *str){
+    int i=0;
+    while(str[i]!=0){
+        if(str[i]>='a'&& str[i]<='z'){
+            str[i]=str[i]-32;
+        }
+        else if(str[i]>='A' && str[i]<='Z'){
+            str[i]=str[i]+32;
+        }
+        i++;
+    }
+}
+ int main(){
+     char str[100];
+     printf("Enter string ");
+     scanf("%s",str);
+     printf("String before toggling %s\n",str);
+     toggle(str);
+     printf("String after toggling %s",str);
+     
+ }
+ 
+ #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+    float c,s;
+    scanf("%f%f",&c,&s);
+    if(c > s) {
+        printf("Loss\n%.2f%%",(c - s)*100/s);  
+    } 
+    else 
+    {  
+        printf("Profit\n%.2f%%", (s - c)*100/c);  
+    } 
+   
+    return 0;
+}
+
+#include <math.h>
+#include <stdio.h>
+
+int main() {
+ double P1,P2,P3,A;
+    scanf("%lf%lf%lf%lf",&P1,&P2,&P3,&A);
+    double prob1=(A>=P1)?0.333:0.0;
+    double prob2=(A>=P2)?0.333:0.0;
+    double prob3=(A>=P3)?0.333:0.0;
+    double sum=prob1+prob2+prob3;
+    if(sum>0.0){
+        prob1/=sum;
+        prob2/=sum;
+        prob3/=sum;
+        
+    }
+    printf("%.3lf\n",prob1);
+    printf("%.3lf\n",prob2);
+    printf("%.3lf\n",prob3);
+    
+    return 0;
+}
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int x,y,z;
+printf("Enter first no.\n");
+scanf("%d",&x);
+printf("Enter Second no.\n");
+scanf("%d",&y);
+z=pow(x,y);
+printf("%d Power is:%d=%d",x,y,z);
+return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    int a,b,perimeter;
+printf("enter length\n");
+scanf("%d",&a);
+printf("enter breadth\n");
+scanf("%d",&b);
+perimeter=2*(a+b);
+printf("Perimeter of rectangle is:\n%d",perimeter);
+return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+  int n;
+  printf("All  even numbers is\n");
+  for(int n=1;n<=100;n++)
+  
+  {
+      if(n%2!=0)
+      printf("%d\n",n);
+  }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+ int day;
+ printf("Enter the month");
+ scanf("%d", &day);
+ switch (day)
+ {
+     case 1:
+     case 3:
+     case 5:
+     case 7:
+     case 8:
+     case 10:
+     case 12:
+     printf("31 days");
+     break;
+     case 2:
+     printf("28 days");
+     break;
+     case 4:
+     case 6:
+     case 9:
+     case 11:
+     printf("30 days");
+     break;
+     deault ("Plz enter a valid month");
+}
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int
+main ()
+{
+  int a;
+  scanf ("%d", &a);
+  if (a >0)
+    {
+      printf ("%d is Positive", a);
+    }
+  else if (a==0)
+    {
+      printf (" Number is equal to %d ", a);
+    }
+    else
+    {
+        printf("%d is negative",a);
+    }
+  return 0;
+}
+
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+  
+  int a;
+  printf("Enter number");
+  scanf("%d",&a);
+  switch(a>0)
+  {
+      case 1:
+      printf(" %d Number is positive",a);
+      break;
+      case 0:
+      switch(a<0)
+      {
+        case 1:
+        printf("%d is negative number",a);
+        break;
+        case 0:
+        printf("Number is zero");
+        
+      }
+   
+  }
+  
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+  int n;
+  scanf("%d",&n);
+  printf("All natural no. is\n");
+  for(int i=n;i>=1;--i)
+  
+  {
+      printf("%d\n",i);
+  }
+
+    return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter first no.\n");
+    scanf("%d",&a);
+    printf("Enter Second no.\n");
+    scanf("%d",&b);
+    printf("Enter Third no.\n");
+    scanf("%d",&c);
+    a>b && a>c ?printf("A is maximum"): b>a  && b>c ?printf("B is maximum"): c>a && c>b ?printf("C is maximum"):printf("A,B,C are equal");
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int
+main ()
+{
+  int a;
+  scanf ("%d", &a);
+if(a%4==0 && a%100!=0 || a%400==0){
+    printf("%d is leap year",a);
+}
+else{
+    printf("%d is not a leap year");
+}
+  return 0;
+  
+  
+  
+  #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int N,S,C,H,L,T;
+    scanf("%d%d%d%d%d%d",&N,&S,&C,&H,&L,&T);
+    if((N*S*C*H)<=(L*T))
+    {
+        printf("Padhai Karenge");
+    }
+    else{
+        printf("Goa Jaayenge");
+    }
+    
+    return 0;
+}
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,b,g,i,d;
+    scanf("%d%d%d%d%d",&n,&b,&g,&i,&d);
+    if 
+        (g*d>b*i)
+        printf("Funny Questions");
+    else if 
+        (b*i>g*d)
+        printf("Simple Questions");
+    else 
+        printf("God Knows!");
+    return 0;
+}
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a,b,r;
+    scanf("%d%d%d",&a,&b,&r);
+    if 
+        (a+b==r){
+          printf("+");
+    }
+    else if 
+        (a*b==r){
+          printf("*");
+    }
+    else if 
+        (a-b==r||b-a==r){
+          printf("-");
+    }
+    else if 
+        (b!=0 && a/b==r){
+        printf("/\n");
+    }
+    
+    #include<stdio.h>
+int main()
+{
+    float a,f;
+printf("Enter temperature in Farenheit\n");
+scanf("%f",&a);
+f=(a-32)/1.8;
+printf("\nTemperature in degree Celcius is:%f",f);
+return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+  int n;
+  printf("All  even numbers is\n");
+  for(int n=1;n<=100;n++)
+  
+  {
+      if(n%2==0)
+      printf("%d\n",n);
+  }
+
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    int a,dia,circum,area;
+printf("enter radius\n");
+scanf("%d",&a);
+dia=2*a;
+circum=2*3.14*a;
+area=3.14*a*a;
+printf("\nDiameter is:%d",dia);
+printf("\nCircumfrence of circle is:%d",circum);
+printf("\nArea of circle is:%d",area);
+return 0;
+}
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+int m;
+    scanf("%d",&m);
+    if
+        (m==1||m==3||m==5||m==7||m==8||m==10||m==12){
+        printf("31");
+    }
+    else if
+        (m == 4 ||m == 6
+             || m == 9 || m == 11) {
+        printf("30");
+    }
+    else if 
+        (m==2){
+        printf("28");
+    }
+    else
+    {
+        printf("Wrong month value.");
+    }
+        return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+ int number;
+ printf("Enter the day of week(1 to 7):");
+ scanf("%d", &number);
+ switch (number)
+ {
+     case 1:
+     printf("Monday");
+     break;
+     case 2:
+     printf("Tuesday");
+     break;
+     case 3:
+     printf("Wednesday");
+     break;
+     case 4:
+     printf("Thursday");
+     break;
+     case 5:
+     printf("Friday");
+     break;
+     case 6:
+     printf("Saturday");
+     break;
+      case 7:
+     printf("Sunday(Enjoy it is a Funday)");
+     break;
+     default :
+     printf("Plz enter a valid Number");
+}
+
+    return 0;
+}
+
+#include <stdio.h>
+void array(int n,int*a){
+     int sum=0;
+    for(int i=0;i<n;i++)
+    {
+        sum=sum+a[i];
+        
+     
+    }
+    printf("%d ",sum);
+}
+int main(){
+    int n;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    array(n,a);
+}
+
+#include <stdio.h>
+
+int main()
+{
+ int n,i,c=0;
+ printf("Enter your number");
+ scanf("%d",&n);
+ for(i=1;i<=n;i++)
+ {
+     if(n%i==0){
+         c++;
+     }
+ }
+ if(c==2){
+     printf("prime");
+ }
+ else{
+     printf("not prime");
+ }
+
+    return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+   int n,fact=1;
+   int i;
+  printf("enter a number");
+  scanf("%d",&n);
+  for(i=1;i<=n;i++)
+  {
+      fact=fact*i;
+  }
+  printf("Factorial of %d is %d",n,fact);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main()
+{
+   int base,expo,power=1;
+   int i;
+   printf("enter both base and power");
+   scanf("%d",&base);
+   scanf("%d",&expo);
+   for(i=1;i<=expo;i++)
+   {
+       power=power*base;
+   }
+   printf("%d^%d=%d",base,expo,power);
+
+    return 0;
+}
+
+#include <stdio.h>
+void array(int n,int*a){
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]<0){
+           printf("%d ",a[i]);
+        }
+     
+    }
+}
+int main(){
+    int n;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    array(n,a);
+}
+#include <stdio.h>
+void array(int n,int*a){
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]<0){
+           printf("%d ",a[i]);
+        }
+     
+    }
+}
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    array(n,a);
+}
+
+#include <stdio.h>
+
+int main()
+{
+int n,last,sum=0, z;
+printf("enter your number");
+scanf("%d",&n);
+z=n;
+while(n>0)
+{
+    sum=sum*10+n%10;
+    n=n/10;
+}
+if(sum==z)
+{
+    printf("Palindrom");
+}
+else
+{
+    printf("Not a palindrom");
+}
+
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  int n,last=0;
+  printf("Enter a number");
+  scanf("%d",&n);
+  while(n>0)
+  {
+      last=last*10+n%10;
+      n=n/10;
+  }
+  printf(" Reverse of number is %d",last);
+ 
+    return 0;
+}
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  int n,last,product=1;
+  printf("Enter a number");
+  scanf("%d",&n);
+  while(n>0)
+  {
+      last=n%10;
+      product=product*last;
+      n=n/10;
+  }
+  printf(" Product of number is %d",product);
+ 
+    return 0;
+}
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+  int n,last,sum=0;
+  printf("Enter a number");
+  scanf("%d",&n);
+  while(n>0)
+  {
+      last=n%10;
+      sum=sum+last;
+      n=n/10;
+  }
+  printf("Sum of number is %d",sum);
+ 
+    return 0;
+}
+
+
